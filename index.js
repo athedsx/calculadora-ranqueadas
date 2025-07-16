@@ -1,10 +1,12 @@
 
-let mmr = winMeter (95, 5)
+let vitoria = 200
+let derrota = 5
+let meeter = winMeter(vitoria, derrota)
 let eloName = (parameterElo())
 
 function parameterElo () {
 
-    let elo = mmr
+    let elo = vitoria
     if (elo <= 10) {
         elo = "Ferro"
     } else if (elo <= 20) {
@@ -30,5 +32,5 @@ function winMeter (win, los) {
     return  result
 }
 
-console.log (`O Herói tem de saldo de ${mmr} e está no nível de ${eloName}.`)
+console.log (`O Herói tem de saldo de ${meeter} e está no nível de ${eloName}.`)
 
